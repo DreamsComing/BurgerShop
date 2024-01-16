@@ -1,0 +1,230 @@
+button, a {
+    cursor: pointer;
+}
+
+body{
+    font-family: Poppins;
+    background-color: #fff;
+    height: 1200px;
+}
+aside{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 40%;
+    height: 1250px;
+    background: url(../images/bacground/background.jpg) 100% 100% no-repeat;
+    background-size: 100% 100%; 
+    border-radius: 50% 0 0 50%;
+}
+main{
+    min-width: 700px;
+}
+
+a{
+    color: #000;
+}
+
+.wrapperBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 30%;
+}
+.typeOfOrder{
+    position: absolute;
+    top: 15%;
+    width: 550px;
+}
+.block_under_img>p{
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+
+.stars{
+    justify-content: space-between;
+    height: 30px;
+    width: 80px;
+    letter-spacing: 3px;
+    text-align: right;
+    background: url(../images/bacground/star.png) no-repeat ;
+    background-position: bottom left;
+    margin-left: 50px;
+    background-size: 25px;   
+}
+
+.block_under_img{
+    position: absolute;
+    z-index: -1;
+    background-color: #c96b00;
+    border-radius: 3rem;
+    width: 60%;
+    min-width: 300px;
+    top: 45%;
+    height: 350px;
+}
+.shadow{
+    position: absolute;
+    left: 12%;
+    top: 200px;
+    z-index: -1;
+    border-radius: 50%;
+    width: 430px;
+    height: 350px;
+    box-shadow: -35px 25px 350px #000;
+} 
+
+.time___block{
+    position: absolute;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    top: 70%;
+    left: 15%;
+    width: 70%;
+    height: 50px;
+    color: #ffffffbf;
+    border-radius: 3rem;
+    border: 0.5px solid #fff;
+    background-color: #000;
+}
+.time___block>p{
+    display: flex;
+    align-items: center;
+    background: url(../images/bacground/oClock.png) no-repeat;
+    background-position: left;
+    background-size: 25px;
+    margin-top: 4%;
+    margin-left: 15%;
+    padding-left: 40px;
+    height: 30px;
+}
+@media screen and (max-width: 1370px) {
+    .shadow{
+        left: 10%;
+        width: 400px;
+    }
+
+
+}
+@media screen and (max-width: 1030px){
+    .shadow{
+        left: 10%;
+        width: 350px;
+    }
+
+    .block_under_img{
+        top: 40%;
+        height: 250px;
+    }
+    
+    .typeOfOrder{
+        position: absolute;
+        top: 15%;
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    aside{
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        background-image: none;
+    }
+    .wrapperBody{
+        left: 0%;
+        top: 10%;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 0;
+        background-size: 80% 10%;
+        background-position-y: 1.5%;
+        height: 40%;
+    }
+    .shadow{
+        left: 7%;
+        top: 10%;
+    }
+    .block_under_img{
+        width: 40%;
+        position: relative;
+        top: 0%;
+    }
+    .typeOfOrder{
+        position: unset;
+    }
+    .block_under_img>p{
+        left: 20%;
+        top: 10%;
+    }
+    .time___block{
+        position: absolute;
+        top: 60%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .typeOfOrder{
+        position: absolute;
+        top: 15%;
+        width: 550px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .typeOfOrder{
+        position: absolute;
+        left: 1%;
+        top: 15%;
+        width: 350px;
+    }
+    .shadow{
+        width: 250px;
+        height: 250px;
+        left: 10%;
+        top: 20%;
+    }
+    .block_under_img{
+        left: 25%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .wrapperBody{
+        flex-direction: column;
+    }
+    .typeOfOrder{
+        left: 15%;
+    }
+    .shadow{
+        left: 30%;
+    }
+    .block_under_img{
+        width: 80%;
+        top: 35%;
+        left: inherit;
+    }
+    .block_under_img>p{
+        top: 30%;
+    }
+    .time___block{
+        position: absolute;
+        top: 70%;
+    }
+    body{
+        font-family: Poppins;
+        background-color: #fff;
+        height: 1400px;
+    }
+
+}

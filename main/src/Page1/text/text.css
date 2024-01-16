@@ -1,0 +1,241 @@
+input,button, hr{
+    border: none;
+}
+
+
+main{
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    min-width: 450px;
+    top: 40%;
+    left: 5%;
+    line-height: 50px;
+}
+
+.block___order{
+    width: 100%;
+    max-width: 800px;
+}
+
+h1{
+    font-size: 70px;
+    word-spacing: 10px;
+    margin-bottom: 30px;
+}
+h2{
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.text_order{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #4d4d4db2;
+    margin-bottom: 30px;
+}
+.text_order>span{
+    color: #000000;
+}
+
+.total___block{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    letter-spacing: -1px;
+    font-weight: 100;
+}
+.text_total{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+.price{
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+.price>span{
+    width: 10px;
+}
+
+.move___price{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    height: 70px;
+    width: 40%;
+}
+.move___price>span{
+    margin: 0 5px 0 5px;
+    font-weight: 700;
+}
+
+.input_price{
+    display: block;
+    font-weight: 900;
+    width: 100%;
+    font-size: 50px;
+    color: #000;
+    border: none;
+}
+
+.block___order_buy{
+    display: flex;
+    align-items: center;
+}
+
+.number_order_main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    overflow: hidden;
+    margin: 0 5% 0 0;
+    height: 50px;
+    width: 20%;
+    border: 2px solid #fdd9d7;
+    border-radius: 3rem;
+}
+
+.buttons{
+    background: #ffffff00;
+}
+
+
+.line{
+    transform: rotate(90deg);
+    background-color: #4d4d4d93;
+    width: 15%;
+    height: 1px;
+}
+
+.left_line{
+    position: absolute;
+    left: 20%;
+}
+
+.order{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.right_line{
+    position: absolute;
+    left: 65%;
+}
+
+.number_order>button{
+    background-color: #fff;
+}
+
+.arrows{
+    position: relative;
+    z-index: 3;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.up{
+    display: block;
+    transform: rotate(-90deg);
+}
+
+
+.down{
+    display: block;
+    transform: rotate(90deg);
+}
+
+
+.block___order_buy{
+    position: absolute;
+    width: 100%;
+    top: 80%;
+}
+.block__buy{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    background: url(../images/bacground/backgrond_busket.png) no-repeat;
+    background-position-y: 50%;
+    background-position-x: 5%;
+    background-size: 50px;
+    background-color: #000;
+    box-shadow: 0 0 30px #00000082;
+    color: #fff;
+    width: 27%;
+    height: 60px;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.block__buy>p{
+    font-size: 20px;
+    word-spacing: 3px;
+    font-weight: 500;
+    margin-left: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+    main{
+        width: 70%;
+        top: 80%;
+        left: 30%;
+    }
+}
+@media screen and (max-width: 730px) {
+    main{
+        width: 100%;
+        min-width: 600px;
+        top: 80%;
+        left: 20%;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-style: 30px;
+    }
+}
+@media screen and (max-width: 730px) {
+    main{
+        width: 80%;
+        min-width: 400px;
+        top: 95%;
+        left: 10%;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .total___block{
+        font-size: 40px;
+    }
+    .move___price{
+        width: 40%;
+    }
+    .input_price{
+        font-size: 40px;
+    }
+    .text_total{
+        width: 100%;
+    }
+    .number_order_main{
+        width: 30%;
+    }
+    .block__buy{
+        width: 50%;
+    }
+}
